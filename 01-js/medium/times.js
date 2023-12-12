@@ -9,5 +9,14 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    var start = new Date();
+    console.log(start);
+    for(var i=0;i<n;i++);
+    var end = new Date();
+    console.log(end);
+    var diff = end - start;
+    console.log(diff / 1000);
+    return diff / 1000;
 }
+
+calculateTime(1000000000000);
